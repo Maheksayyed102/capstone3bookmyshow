@@ -20,3 +20,4 @@ mongoose
 const Booking = mongoose.model("bookmovietickets", bookMovieSchema);
 
 module.exports = Booking;
+

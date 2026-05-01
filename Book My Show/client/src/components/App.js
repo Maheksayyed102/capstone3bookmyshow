@@ -4,10 +4,11 @@ import "../styles/bootstrap.min.css";
 import Home from "./Home";
 
 const App = () => {
-    return (
-        <>
-        <Home />
-        </>
-    );
+  return (
+    <>
+      <Home />
+    </>
+  );
 };
+
 export default App;
