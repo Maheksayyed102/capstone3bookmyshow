@@ -1,17 +1,29 @@
-const { Schema } = require('mongoose');
+const { Schema } = require("mongoose");
 
-const bookMovieSchema = new Schema({
-    movie: Schema.Types.String,
-    slot: Schema.Types.String,
+const bookMovieSchema = new Schema(
+  {
+    movie: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    slot: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     seats: {
-        A1: Schema.Types.Number,
-        A2: Schema.Types.Number,
-        A3: Schema.Types.Number,
-        A4: Schema.Types.Number,
-        D1: Schema.Types.Number,
-        D2: Schema.Types.Number
-    }
-
-})
+      A1: { type: Number, default: 0 },
+      A2: { type: Number, default: 0 },
+      A3: { type: Number, default: 0 },
+      A4: { type: Number, default: 0 },
+      D1: { type: Number, default: 0 },
+      D2: { type: Number, default: 0 },
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
 exports.bookMovieSchema = bookMovieSchema;
