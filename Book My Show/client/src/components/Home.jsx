@@ -57,7 +57,7 @@ const Home = () => {
     }));
 
     axios
-      .get("http://localhost:8080/api/booking")
+      .get("http://capstone3bookmyshow.onrender.com/api/booking")
       .then((res) => {
         if (typeof res.data.message === "string") {
           setLastBooking((prev) => ({
@@ -170,7 +170,7 @@ const Home = () => {
     }));
 
     axios
-      .post("http://localhost:8080/api/booking", {
+      .post("http://capstone3bookmyshow.onrender.com/api/booking", {
         movie: state.movie,
         slot: state.timeSlots,
         seats: {
