@@ -265,8 +265,4 @@ const Home = () => {
     </Container>
   );
 };
-<<<<<<< HEAD
 export default Home;
-=======
-export default Home;
->>>>>>> c4f817ac16f4590f6895de0ae4f43e00085a5e85
